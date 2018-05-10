@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './home/home.component';
 import { AuthModule } from './auth/auth.module';
-import { HomeModule } from './home/home.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthGuard } from './auth/auth.guard';
 
@@ -15,9 +14,8 @@ import { AuthGuard } from './auth/auth.guard';
   ],
   imports: [
     BrowserModule, 
-    AuthModule,
-    HomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

@@ -8,7 +8,6 @@ const routes: Routes = [
         loadChildren: './home/home.module#HomeModule',
         canActivate: [AuthGuard]
     }
-    // { path: '**', redirectTo: '/login', pathMatch: 'full' }
 ];
 
 @NgModule({
